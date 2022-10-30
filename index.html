@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Listings</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/ab9e76cb3d.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+</head>
+<body>
+  <!-- Background image -->
+  <div class="header">
+    <img src="images/bg-header-desktop.svg" alt="background-img-desktop" class="background-img-desktop">
+    <img src="images/bg-header-mobile.svg" alt="background-img-mobile" class="background-img-mobile">
+  </div>
+  <!-- Search bar -->
+  <!-- Dropdown list -->
+    <div class="search-bar">
+      <div class="form-group">
+        <div id="myMultiselect" class="multiselect">
+          <div id="mySelectLabel" class="selectBox" onclick="toggleCheckboxArea()">
+            <select class="form-select">
+              <option>Select filters</option>
+            </select>
+            <div class="overSelect"></div>
+          </div>
+          <div id="mySelectOptions">
+            <label><input type="checkbox" name="type" id="css" value="CSS" /> CSS</label>
+            <label><input type="checkbox" name="type" id="django" value="Django" /> Django</label>
+            <label><input type="checkbox" name="type" id="html" value="HTML" /> HTML</label>
+            <label><input type="checkbox" name="type" id="js" value="JavaScript" /> JavaScript</label>
+            <label><input type="checkbox" name="type" id="python" value="Python" /> Python</label>
+            <label><input type="checkbox" name="type" id="react" value="React" /> React</label>
+            <label><input type="checkbox" name="type" id="ror" value="Ror" /> RoR</label>
+            <label><input type="checkbox" name="type" id="sass" value="Sass" /> Sass</label>
+            <label><input type="checkbox" name="type" id="vue" value="Vue" /> Vue</label>
+          </div>
+        </div>
+      </div>
+      <!-- Display filters section -->
+
+        <div class="selected-filter display-filter">
+          <div class="filter-text">CSS</div>
+          <div class="filter-remove"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="selected-filter display-filter">
+          <div class="filter-text">Django</div>
+          <div class="filter-remove"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="selected-filter display-filter">
+          <div class="filter-text">HTML</div>
+          <div class="filter-remove"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="selected-filter display-filter">
+          <div class="filter-text">JavaScript</div>
+          <div class="filter-remove"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="selected-filter display-filter">
+          <div class="filter-text">Python</div>
+          <div class="filter-remove"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="selected-filter display-filter">
+          <div class="filter-text">React</div>
+          <div class="filter-remove"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="selected-filter display-filter">
+          <div class="filter-text">Ror</div>
+          <div class="filter-remove"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="selected-filter display-filter">
+          <div class="filter-text">Sass</div>
+          <div class="filter-remove"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="selected-filter display-filter">
+          <div class="filter-text">Vue</div>
+          <div class="filter-remove"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="clear-button" id="clear-button">Clear</div>
+      </div>
+
+
+  <!-- Content items -->
+  <div class="container"></div>
+  <script src="app.js" async defer></script>
+</body>
+</html>
